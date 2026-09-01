@@ -51,3 +51,41 @@ body[data-route="token"] .btn.light:hover { background:var(--cream); color:var(-
 body[data-route="join"] .form input, body[data-route="join"] .form textarea { border-color:var(--ink); }
 body[data-route="join"] .form input:focus, body[data-route="join"] .form textarea:focus { border-color:var(--red); }
 body[data-route="members"] #app { background:var(--red); }
+@media (max-width:699px) {
+	.site-header { flex-wrap:wrap; padding:16px 5vw 12px; gap:14px; }
+	.brand { min-width:88px; font-size:19px; line-height:15px; }
+	.header-action { margin-left:auto; padding:10px; }
+	.main-nav { display:flex; order:3; flex-basis:100%; justify-content:space-between; gap:14px; overflow-x:auto; padding:4px 0 3px; scrollbar-width:none; }
+	.main-nav::-webkit-scrollbar { display:none; }
+	.main-nav a { flex:0 0 auto; font-size:10px; }
+	.hero { min-height:660px; padding-top:38px; }
+	.hero h1 { font-size:clamp(92px,27vw,150px); line-height:.78; margin-top:26px; max-width:100%; }
+	.hero-sub { max-width:220px; line-height:1.8; position:relative; z-index:1; }
+	.hero-art { top:32%; right:-20vw; width:80vw; height:350px; opacity:.55; }
+	.hero-art img { border-width:5px; }
+	.hero-art .glitch { height:9px; }
+	.btns { width:100%; }
+	.btn { min-height:48px; flex:1 1 150px; }
+	.page { min-height:auto; padding-top:42px; padding-bottom:58px; }
+	.page-title { font-size:clamp(76px,22vw,130px); margin-top:24px; }
+	.lede { font-size:24px; }
+	.section-label { margin-top:44px; gap:16px; }
+	.section-label span:last-child { text-align:right; }
+	.cream-band { padding-top:48px; padding-bottom:48px; }
+	.symbol { min-height:120px; }
+	.index-card { min-height:116px; padding:14px; }
+	.index-card strong { font-size:46px; }
+	.art-grid { gap:7px; }
+	.art-panel .art-type { font-size:56px; }
+	.art-panel.tall .art-type { font-size:82px; }
+	.cards { gap:8px; }
+	.feature-card { min-height:180px; padding:16px; }
+	.feature-card h3 { font-size:34px; margin-bottom:22px; }
+	.tier { min-height:170px; padding:18px; }
+	.tier h3 { font-size:48px; }
+	.panel { padding:20px; }
+	.panel h2 { font-size:40px; }
+	.form { gap:16px; }
+	.gate { margin-top:25px; }
+	.site-footer { padding:32px 5vw; }
+}
