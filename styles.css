@@ -89,3 +89,17 @@ body[data-route="members"] #app { background:var(--red); }
 	.gate { margin-top:25px; }
 	.site-footer { padding:32px 5vw; }
 }
+@media (max-width:380px) {
+	.site-header { padding-left:16px; padding-right:16px; }
+	.page { padding-left:16px; padding-right:16px; }
+	.cream-band { margin-left:-16px; margin-right:-16px; padding-left:16px; padding-right:16px; }
+	.hero { min-height:570px; padding-top:30px; }
+	.hero h1 { font-size:clamp(82px,26vw,110px); }
+	.hero-art { top:35%; right:-27vw; width:88vw; height:300px; }
+	.btn { flex-basis:100%; width:100%; }
+	.lede { font-size:21px; }
+	.symbol { min-height:105px; }
+	.symbol b { font-size:78px; }
+	.pyramid { transform:scale(.82); }
+	.site-footer { padding-left:16px; padding-right:16px; }
+}
