@@ -5,6 +5,25 @@ const header = (kicker, title, copy) => `<div class="eyebrow">${kicker}</div><h1
 const artOne = 'assets/photo_2026-09-01_13-54-05.jpg';
 const artTwo = 'assets/photo_2026-09-01_13-54-37.jpg';
 const artistInstagram = 'https://www.instagram.com/tokeyodraws?stkn=MXkxYTR4ZHZnOGtoMA==';
+const galleryAssets = [
+  ['photo_2026-09-01_13-54-05.jpg', 'Fragmented illustrated character artwork', 'GB / 001', 'EYE<br>ON'],
+  ['photo_2026-09-01_13-54-37.jpg', 'Illustrated character portrait', 'Signal / 02', 'MOVE'],
+  ['photo_2026-09-01_21-39-09.jpg', 'Illustrated food still life', 'No spectators / 03', 'TABLE'],
+  ['photo_2026-09-01_21-39-18.jpg', 'Split portrait illustration', 'Street myth / 04', 'FORM'],
+  ['photo_2026-09-01_21-39-35.jpg', 'Illustrated character composition', 'Study / 05', 'RAW'],
+  ['photo_2026-09-01_21-39-45.jpg', 'Illustrated culture composition', 'Culture / 06', 'LINK'],
+  ['photo_2026-09-01_21-39-56.jpg', 'Illustrated pink character', 'Character study / 07', 'PINK'],
+  ['photo_2026-09-01_21-40-04.jpg', 'Illustrated character artwork', 'Signal / 08', 'LOOK'],
+  ['photo_2026-09-01_21-40-42.jpg', 'Illustrated portrait close-up', 'Portrait / 09', 'FORM'],
+  ['photo_2026-09-01_21-40-50.jpg', 'Illustrated food and culture scene', 'Table / 10', 'MOVE'],
+  ['photo_2026-09-01_21-41-02.jpg', 'Illustrated movement study', 'World / 11', 'RAW'],
+  ['photo_2026-09-01_21-41-12.jpg', 'Illustrated symbol composition', 'Signal / 12', 'EYE'],
+  ['photo_2026-09-01_21-41-23.jpg', 'Illustrated landscape emblem', 'World / 13', '▲'],
+  ['photo_2026-09-01_21-41-53.jpg', 'Red masked illustrated figure', 'Chain language / 14', 'LINK'],
+  ['photo_2026-09-01_21-42-02.jpg', 'Illustrated character study', 'Character study / 15', 'FORM']
+];
+
+function homeGallery() { return `<section class="page"><div class="section-label"><span>07 / Gallery</span><a href="#/gallery">View all ↗</a></div><div class="art-grid">${galleryAssets.map((image, index) => `<div class="art-panel${index === 0 ? ' tall' : ''}"><img src="assets/${image[0]}" alt="${image[1]}" /><span class="art-note">${image[2]}</span><b class="art-type">${image[3]}</b></div>`).join('')}</div></section>`; }
 
 function home() {
   return `<section class="page hero">
@@ -22,7 +41,7 @@ function home() {
   <section class="page home-sectors"><div class="section-label"><span>04 / What we build</span><span>Lanes in motion</span></div><h2 class="display home-section-title">What We Build</h2><div class="cards sector-cards"><article class="feature-card"><h3>Trading Desk</h3><p>Process, execution, extraction.</p></article><article class="feature-card"><h3>Media & Motion</h3><p>High-visual culture into service and signal.</p></article><article class="feature-card"><h3>Brand Incubation</h3><p>Make the idea useful and ownable.</p></article><article class="feature-card"><h3>Real Estate</h3><p>Physical value with new rails.</p></article><article class="feature-card"><h3>Fashion</h3><p>Culture with a supply chain.</p></article><article class="feature-card"><h3>Collectibles & Watches</h3><p>Objects with provenance and attention.</p></article></div><p class="desk-line">We do not just talk markets. We build lanes people can enter.</p></section>
   <section class="page cream-band tokenization-block"><div class="split"><div><div class="eyebrow">05 / Tokenization</div><h2 class="display" style="font-size:clamp(64px,10vw,130px);margin:30px 0 0">The next<br>rail.</h2></div><div><p class="lede">Gold. Oil. Railroads. Internet.</p><p class="body-copy">Now ownership goes on-chain. Tokenization is the next infrastructure wave.</p><p class="body-copy">Gami Boyz / Kurogami is how operators enter early.</p></div></div></section>
   <section class="page access-summary"><div class="split"><div><div class="eyebrow">06 / Access</div><h2 class="display" style="font-size:clamp(70px,12vw,160px);margin:25px 0">Enter the<br>network.</h2></div><div><p class="body-copy">Token and access are coming through the same structure. This is membership into an operator system, not a random mint.</p><p class="body-copy">Start with the signal. Earn the room.</p>${button('Request Access', '#/join')}${button('See Access Paths', '#/access', true)}</div></div></section>
-  <section class="page"><div class="section-label"><span>07 / Gallery</span><a href="#/gallery">View all ↗</a></div><div class="art-grid"><div class="art-panel tall"><img src="${artOne}" alt="Fragmented illustrated character artwork" /><span class="art-note">GB / 001</span><b class="art-type">EYE<br>ON</b></div><div class="art-panel"><img src="assets/photo_2026-09-01_21-41-53.jpg" alt="Red masked illustrated figure" /><span class="art-note">Signal / 02</span><b class="art-type">MOVE</b></div><div class="art-panel"><img src="assets/photo_2026-09-01_21-41-23.jpg" alt="Illustrated landscape emblem" /><span class="art-note">World / 03</span><b class="art-type">RAW</b></div><div class="art-panel"><img src="assets/photo_2026-09-01_21-39-18.jpg" alt="Split portrait illustration" /><span class="art-note">Street myth / 04</span><b class="art-type">FORM</b></div><div class="art-panel"><img src="assets/photo_2026-09-01_21-40-50.jpg" alt="Illustrated food and culture scene" /><span class="art-note">Culture / 05</span><b class="art-type">TABLE</b></div><div class="art-panel"><img src="assets/photo_2026-09-01_21-39-56.jpg" alt="Illustrated pink character" /><span class="art-note">Character study / 06</span><b class="art-type">PINK</b></div></div></section>
+  ${homeGallery()}
   <section class="page cream-band"><div class="split"><div><div class="eyebrow">Last call</div><h2 class="display" style="font-size:clamp(70px,12vw,160px);margin:25px 0">GET IN<br>FORMATION.</h2></div><div><p class="lede">Access is earned. The request window is open.</p>${button('Request Access', '#/join')}</div></div></section>`;
 }
 
