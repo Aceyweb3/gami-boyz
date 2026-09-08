@@ -228,3 +228,30 @@ body[data-route="home"] .btn:hover, body[data-route="home"] .btn.light:hover { b
 	.sector-cards { grid-template-columns:1fr; }
 	.sector-cards .feature-card { min-height:125px; }
 }
+@media (max-width:699px) {
+	.hero { min-height:750px; }
+	.hero-network-copy { margin-top:26px; line-height:1.5; }
+	.hero-network-copy small { line-height:1.35; margin-top:14px; }
+	.hero .btns { margin-top:28px; position:relative; z-index:2; }
+	.home-desks, .home-sectors, .access-summary { padding-top:58px; padding-bottom:68px; }
+	.home-desks .section-label, .home-sectors .section-label { margin-top:0; }
+	.home-section-title { margin-top:36px; margin-bottom:28px; line-height:.82; }
+	.desk-cards, .sector-cards { gap:14px; }
+	.desk-cards .feature-card { min-height:235px; padding:20px; }
+	.desk-cards .feature-card h3 { margin-bottom:28px; }
+	.desk-cards .feature-card strong { margin-top:0; }
+	.desk-line { margin-top:34px; line-height:1.45; }
+	.sector-cards { grid-template-columns:1fr; }
+	.sector-cards .feature-card { min-height:138px; padding:20px; }
+	.sector-cards .feature-card h3 { font-size:36px; margin:0 0 15px; }
+	.why-grid { gap:12px; margin-top:36px; }
+	.why-grid .index-card { min-height:128px; }
+	.tokenization-block .split, .access-summary .split { gap:32px; }
+	.tokenization-block .lede { margin-top:0; }
+}
+@media (max-width:380px) {
+	.hero { min-height:700px; }
+	.home-section-title { font-size:68px; }
+	.desk-cards .feature-card { min-height:220px; }
+	.sector-cards .feature-card { min-height:128px; }
+}
