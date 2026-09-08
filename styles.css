@@ -24,9 +24,10 @@ a { color:inherit; text-decoration:none; }
 .hero-art { width:min(50vw,540px); transform:rotate(3deg); }
 .hero-art img { width:100%; height:100%; object-fit:cover; object-position:center 40%; mix-blend-mode:multiply; border:12px solid var(--ink); }
 .art-panel img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; filter:saturate(1.2) contrast(1.08); }
+.art-link { position:absolute; inset:0; z-index:1; display:block; }
 .art-panel:nth-child(3n) img { object-position:68% center; }
 .art-panel .art-type { text-shadow:2px 2px 0 var(--red); }
-.art-panel img ~ .art-note, .art-panel img ~ .art-type { z-index:2; }
+.art-panel .art-note, .art-panel .art-type { z-index:2; }
 @media (max-width:699px) { .hero-art { opacity:.82; right:-17vw; top:22%; width:66vw; height:390px; } .hero h1 { max-width:74%; } .hero-art img { border-width:7px; } }
 .ticker { border-top:2px solid var(--gold); border-bottom:2px solid var(--gold); }
 .ticker span { display:block; width:max-content; transform:translateX(100vw); animation:marquee 20s linear infinite; }
