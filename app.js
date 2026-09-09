@@ -32,7 +32,7 @@ function home() {
     <h1 class="display">GAMI<br>BOYZ</h1>
     <p class="hero-sub"><span>Brotherhood lane</span> of the movement</p>
     <div class="hero-network-copy"><strong>Culture x Finance.</strong><br>A trading-led operator network for the new economy.<small>The NFT is the key. The network is the value.</small></div>
-    <div class="btns">${button('Enter the Club', '#/club')}${button('DM to Enter', accessInstagram, true)}</div>
+    <div class="btns">${button('DM to Enter', accessInstagram)}</div>
     <div class="hero-art" aria-hidden="true"><img src="${artOne}" alt="Illustrated fragmented character with a chain and glitch cuts" /><i class="glitch a"></i><i class="glitch b"></i><i class="glitch c"></i></div>
   </section>
   <div class="ticker"><span>NOT FOR SPECTATORS <b>✦</b> GAMI BOYZ MOVE TOGETHER <b>✦</b> CLUB FIRST. NOISE LATER <b>✦</b> </span></div>
