@@ -229,6 +229,7 @@ body[data-route="home"] .btn:hover, body[data-route="home"] .btn.light:hover { b
 	.sector-cards { grid-template-columns:1fr; }
 	.sector-cards .feature-card { min-height:125px; }
 }
+
 @media (max-width:699px) {
 	.hero { min-height:750px; }
 	.hero-network-copy { margin-top:26px; line-height:1.5; }
@@ -255,4 +256,10 @@ body[data-route="home"] .btn:hover, body[data-route="home"] .btn.light:hover { b
 	.home-section-title { font-size:68px; }
 	.desk-cards .feature-card { min-height:220px; }
 	.sector-cards .feature-card { min-height:128px; }
+}
+
+@media (max-width:699px) {
+	.hero { min-height:0; }
+	.hero-art { position:relative; top:auto; right:auto; width:min(100%,390px); height:min(92vw,390px); margin:38px auto 0; opacity:1; transform:rotate(3deg); }
+	.hero-art img { object-fit:contain; }
 }
