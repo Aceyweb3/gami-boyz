@@ -370,3 +370,11 @@ body.modal-open { overflow:hidden; }
 	.hero-art img { width:100%; height:100%; object-fit:contain; border-width:7px; }
 	.hero-art .glitch { height:9px; }
 }
+
+@media (min-width:700px) and (max-width:1099px) {
+	.hero { min-height:auto; padding-top:58px; padding-bottom:76px; }
+	.hero h1 { width:100%; max-width:560px; font-size:clamp(110px,16vw,180px); }
+	.hero-network-copy { max-width:440px; }
+	.hero-art { position:relative; top:auto; right:auto; width:min(72vw,620px); height:min(62vw,520px); margin:34px 0 0 auto; opacity:1; transform:rotate(2deg); }
+	.hero-art img { object-fit:contain; border-width:9px; }
+}
