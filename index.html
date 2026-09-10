@@ -9,14 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20260910-2" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#/" aria-label="Gami Boyz home"><span class="brand-mark">◈</span> GAMI<br>BOYZ</a>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#/club">Club</a><a href="#/access">Access</a><a href="#/gallery">Gallery</a><a href="#/token">Token</a><a href="https://www.instagram.com/cryptoac3y/" target="_blank" rel="noreferrer noopener">Join</a>
+      <a href="#/club">Club</a><a href="#/access">Access</a><a href="#/gallery">Gallery</a><a href="#/token">Token</a><a href="#/join">Join</a>
     </nav>
     <a class="header-action" href="#/members">Members <span>↗</span></a>
   </header>
@@ -24,9 +24,24 @@
   <footer class="site-footer">
     <div class="footer-brand">GAMI BOYZ<span>®</span></div>
     <p>Brotherhood lane of the Kurogami movement.<br>Club first. Noise later.</p>
-    <div class="footer-links"><a href="#/access">Access</a><a href="https://www.instagram.com/cryptoac3y/" target="_blank" rel="noreferrer noopener">Join</a><a href="#/members">Members</a></div>
+    <div class="footer-links"><a href="#/access">Access</a><a href="#/join">Join</a><a href="#/members">Members</a></div>
     <div class="footer-legal">© 2026 Gami Boyz / Move together.</div>
   </footer>
-  <script src="app.js"></script>
+  <div class="site-modal" id="site-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close onclick="window.closeSiteModal()"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="dm-modal-title">
+      <button class="modal-close" type="button" aria-label="Close dialog" data-modal-close onclick="window.closeSiteModal()">×</button>
+      <div class="dm-modal-content">
+        <div class="eyebrow">DIRECT / SIGNAL</div>
+        <h2 class="display" id="dm-modal-title">DM DESK.</h2>
+        <p>Open Instagram and send <strong>DESK</strong> to <strong>@cryptoac3y</strong>. That is the signal to enter the room.</p>
+        <a class="btn" href="https://www.instagram.com/cryptoac3y/" target="_blank" rel="noreferrer noopener">Open Instagram <span>↗</span></a>
+      </div>
+      <div class="proof-modal-content" aria-hidden="true">
+        <img class="proof-modal-image" alt="" />
+      </div>
+    </div>
+  </div>
+  <script src="app.js?v=20260910-2"></script>
 </body>
 </html>
