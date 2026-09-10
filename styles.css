@@ -264,6 +264,15 @@ body[data-route="home"] .btn:hover, body[data-route="home"] .btn.light:hover { b
 .events-foot { max-width:570px; color:#aaa396; font-size:14px; line-height:1.45; margin:36px 0 0; }
 .events-section .btn { margin-top:25px; background:var(--cream); color:var(--ink); border-color:var(--cream); }
 .events-section .btn:hover { background:var(--gold); border-color:var(--gold); }
+.crew-strip { background:var(--ink); color:var(--cream); }
+.crew-strip .eyebrow:before { background:var(--gold); }
+.crew-subtitle { color:#c9bea5; font-size:clamp(20px,3vw,30px); line-height:1.1; margin:18px 0 0; }
+.crew-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+.crew-item { display:flex; flex-direction:column; justify-content:space-between; min-width:150px; flex:1 1 150px; gap:8px; padding:18px 16px; border:1px solid rgba(243,233,204,.38); background:rgba(243,233,204,.02); }
+.crew-item strong { font-size:14px; letter-spacing:.08em; text-transform:uppercase; }
+.crew-item span { color:#c9bea5; font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
+.crew-strip .btn { margin-top:28px; background:var(--cream); color:var(--ink); border-color:var(--cream); }
+.crew-strip .btn:hover { background:var(--gold); border-color:var(--gold); }
 .why-grid { grid-template-columns:repeat(5,1fr); }
 .why-grid .index-card { min-height:145px; }
 .sector-cards { grid-template-columns:repeat(3,1fr); }
