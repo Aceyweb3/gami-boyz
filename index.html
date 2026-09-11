@@ -18,8 +18,12 @@
     <nav class="main-nav" aria-label="Main navigation">
       <a href="#/club">Club</a><a href="#/access">Access</a><a href="#/gallery">Gallery</a><a href="#/token">Token</a><a href="#/join">Join</a>
     </nav>
-    <a class="btn header-action" href="#/members">Members <span>↗</span></a>
+    <button class="btn header-action dm-trigger" type="button" data-dm-trigger onclick="window.openDmModal()">Members <span>↗</span></button>
   </header>
+  <div class="audio-control" aria-label="Site audio">
+    <button class="audio-toggle" id="audio-toggle" type="button" aria-pressed="false">Play sound</button>
+    <audio id="site-audio" loop preload="metadata" src="assets/gami-boyz-theme.mp3"></audio>
+  </div>
   <main id="app" tabindex="-1"></main>
   <footer class="site-footer">
     <div class="footer-brand">GAMI BOYZ<span>®</span></div>
