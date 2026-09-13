@@ -309,6 +309,30 @@ body[data-route="home"] .btn:hover, body[data-route="home"] .btn.light:hover { b
 .crew-item span { color:#c9bea5; font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
 .crew-strip .btn { margin-top:28px; background:var(--cream); color:var(--ink); border-color:var(--cream); }
 .crew-strip .btn:hover { background:var(--gold); border-color:var(--gold); }
+.creative-network { background:var(--red); color:var(--ink); }
+.creative-network .eyebrow:before { background:var(--ink); }
+.creative-subtitle { max-width:620px; margin:18px 0 0; font-size:clamp(20px,3vw,30px); line-height:1.1; }
+.creative-intro { margin-top:38px; }
+.creative-intro .body-copy { max-width:520px; margin:0 0 14px; }
+.creative-benefits { border-top:1px solid var(--ink); padding-top:16px; }
+.creative-benefits > span { text-transform:uppercase; font-size:10px; font-weight:700; letter-spacing:1.5px; }
+.creative-benefits ul { display:grid; gap:8px; margin:14px 0 0; padding:0; list-style:none; }
+.creative-benefits li { padding-left:18px; font-size:14px; position:relative; }
+.creative-benefits li:before { content:'+'; position:absolute; left:0; font-weight:700; }
+.creative-role-cards { margin-top:42px; }
+.creative-role-cards .feature-card { min-height:125px; display:flex; align-items:end; }
+.creative-role-cards .feature-card h3 { margin:0; font-size:34px; }
+.creative-application { max-width:820px; margin-top:58px; padding-top:22px; border-top:1px solid var(--ink); }
+.creative-application h3 { margin:20px 0 28px; font:clamp(42px,7vw,72px)/.9 var(--display); text-transform:uppercase; }
+.creative-form { display:grid; gap:18px; }
+.creative-form label { display:grid; gap:7px; text-transform:uppercase; font-size:10px; font-weight:700; letter-spacing:1px; }
+.creative-form input, .creative-form select, .creative-form textarea { width:100%; border:1px solid var(--ink); border-radius:0; background:rgba(243,233,204,.72); color:var(--ink); padding:12px; outline:none; font:15px var(--body); }
+.creative-form input:focus, .creative-form select:focus, .creative-form textarea:focus { border-color:var(--gold); box-shadow:3px 3px 0 var(--ink); }
+.creative-form textarea { resize:vertical; }
+.creative-form-grid { display:grid; gap:18px; }
+.creative-form .btn { justify-self:start; margin-top:4px; }
+.creative-form-status { min-height:20px; margin:0; font-size:12px; font-weight:700; }
+.creative-secondary-cta { margin-top:18px; }
 .why-grid { grid-template-columns:repeat(5,1fr); }
 .why-grid .index-card { min-height:145px; }
 .sector-cards { grid-template-columns:repeat(3,1fr); }
@@ -419,6 +443,9 @@ body.modal-open { overflow:hidden; }
 	.sector-cards .feature-card { min-height:138px; padding:20px; }
 	.sector-cards .feature-card h3 { font-size:36px; margin:0 0 15px; }
 	.sector-image { width:calc(100% + 40px); height:105px; margin:-20px -20px 18px; }
+	.creative-role-cards .feature-card { min-height:110px; }
+	.creative-role-cards .feature-card h3 { font-size:30px; }
+	.creative-application { margin-top:46px; }
 	.why-grid { gap:12px; margin-top:36px; }
 	.why-grid .index-card { min-height:128px; }
 	.tokenization-block .split, .access-summary .split { gap:32px; }
