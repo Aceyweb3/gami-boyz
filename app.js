@@ -52,7 +52,69 @@ const galleryAssets = [
 function homeGallery() { return `<section class="page home-gallery"><div class="section-label"><span>GAMI BOYZ / ART ARCHIVE</span><a href="#/gallery">View all ↗</a></div><div class="art-grid">${galleryAssets.map((image, index) => `<div class="art-panel${index === 0 ? ' tall' : ''}"><img src="assets/${image[0]}" alt="${image[1]}" /><span class="art-note">${image[2]}</span><b class="art-type">${image[3]}</b></div>`).join('')}</div></section>`; }
 function weeklyEvents() { return `<section class="page events-section" id="events"><div class="kuro-section-label"><span>05 / THE ROOM</span><span>MIAMI / 001</span></div><div class="room-layout"><div><h2 class="display home-section-title">The Room</h2><p class="events-subtitle">Redbar.</p><p class="events-foot">Gami Boyz meets in one room for now.<br>Presence over calendar spam.</p><p class="room-invite">Additional rooms by invitation.</p></div><article class="feature-card event-card"><img class="event-image" src="assets/redbar.jpg" alt="Redbar venue" /><span class="number">TUE / FRI</span><h3>Redbar</h3><strong>MIAMI / NIGHT ROOM</strong><p>Night presence. Conversations. Formation in public.</p></article></div><div class="room-crew"><span>IN FORMATION</span><p>Tom Laroc / DJ &nbsp;·&nbsp; DJ Scholar / DJ &nbsp;·&nbsp; Lens / Live painter &nbsp;·&nbsp; James / Art &nbsp;·&nbsp; Ac3y / Desks</p></div></section>`; }
 function creativeNetwork() { return `<section class="page creative-network" id="creator-path"><div class="kuro-section-label"><span>CREATOR PATH / APPLICATION</span><span>04 / FORMATION</span></div><h2 class="display home-section-title">Apply to operate<br>in the room.</h2><p class="creative-subtitle">Creators and artists. Audience stays yours.</p><div class="split creative-intro"><div><p class="body-copy">Bring signal. Keep your voice. Find your place in the formation.</p></div><div><div class="creative-benefits"><span>ROOM ACCESS</span><ul><li>Placement consideration</li><li>Network exposure</li><li>Collab lanes</li><li>Path into formation</li></ul></div></div></div><div class="cards creative-role-cards"><article class="feature-card"><h3>DJ</h3></article><article class="feature-card"><h3>Live Painter</h3></article><article class="feature-card"><h3>Artist</h3></article><article class="feature-card"><h3>Designer / Other</h3></article></div><div class="creative-application"><div class="eyebrow">APPLICATION / 01</div><h3>Make your case.</h3><form class="creative-form" id="creative-form"><div class="creative-form-grid"><label>Name<input name="name" type="text" required /></label><label>Role<select name="role" required><option value="">Select role</option><option>DJ</option><option>Live Painter</option><option>Artist</option><option>Designer</option><option>Other</option></select></label><label>City<input name="city" type="text" required /></label><label>Instagram or portfolio URL<input name="portfolio" type="url" placeholder="https://" required /></label></div><label>What you bring<textarea name="bring" rows="3" required></textarea></label><label>What you want<textarea name="want" rows="3" required></textarea></label><button class="btn" type="submit">Submit Application <span>↗</span></button><p class="creative-form-status" id="creative-form-status" aria-live="polite"></p></form></div></section>`; }
-function briefSection() { return `<section class="page brief-section" id="brief"><div class="kuro-section-label"><span>BRIEFOS ON GAMI BOYZ</span><span>PUBLIC SIGNAL / 01</span></div><div class="brief-heading"><div><h2 class="display home-section-title">Operator<br>brief.</h2><p class="brief-topics">Markets. AI. RWAs.</p></div><p class="brief-intro">The public desk note.<br>Short. Clean. No noise.</p></div><div class="brief-grid"><article class="latest-brief"><div class="brief-meta"><span>BRIEF / 001</span><span>ISSUE NOTE</span></div><h3>Signal over noise.</h3><ul><li>Markets move on structure, not volume of opinion.</li><li>AI is a tool. Process decides its value.</li><li>Real-world assets need real rails.</li></ul><a class="brief-link" href="#/brief/001">Read brief <span>↗</span></a></article><div class="brief-subscribe"><span class="brief-label">01 / SUBSCRIBE</span><h3>Get the brief.</h3><form class="minimal-form" id="brief-subscribe-form"><label class="sr-only" for="brief-email">Email address</label><input id="brief-email" name="email" type="email" placeholder="Email address" autocomplete="email" required /><button class="btn" type="submit">Subscribe <span>↗</span></button><p class="form-note">Operator brief only. No spam.</p><p class="brief-form-status" aria-live="polite"></p></form></div></div><div class="brief-sponsor" id="sponsor"><div><span class="brief-label">02 / SPONSOR A BRIEF</span><h3>Sponsor the room.</h3><p>One presenting slot per issue. Labeled. Clean. Operator audience.</p><div class="sponsor-tiers"><span>Single issue</span><span>Monthly / 4 issues</span></div><a class="brief-link" href="https://www.instagram.com/cryptoac3y/" target="_blank" rel="noreferrer noopener">DM SPONSOR TO @CRYPTOAC3Y <span>↗</span></a></div><form class="minimal-form sponsor-form" id="brief-sponsor-form"><label>Name<input name="name" type="text" placeholder="Name" autocomplete="name" required /></label><label>Brand<input name="brand" type="text" placeholder="Brand" required /></label><label>Email / Instagram<input name="contact" type="text" placeholder="Email or Instagram" required /></label><label>Issue format<select name="format" required><option value="">Select format</option><option>Single issue</option><option>Monthly / 4 issues</option></select></label><label>Budget range<select name="budget" required><option value="">Select range</option><option>Under $500</option><option>$500–$1,000</option><option>$1,000+</option><option>Discuss scope</option></select></label><label>Message<textarea name="message" rows="3" placeholder="Message" required></textarea></label><button class="btn" type="submit">Request sponsor slot <span>↗</span></button><p class="brief-form-status" aria-live="polite"></p></form></div><p class="brief-framing">The brief is public. The desk is private. Kurogami is the rail underneath.</p></section>`; }
+function briefSection() {
+  return `<section class="page brief-section" id="brief">
+    <div class="kuro-section-label"><span>BRIEFOS ON GAMI BOYZ</span><span>PUBLIC SIGNAL / 01</span></div>
+    <div class="brief-heading">
+      <div><h2 class="display home-section-title">Operator<br>brief.</h2><p class="brief-topics">Markets. AI. RWAs.</p></div>
+      <p class="brief-intro">The public desk note.<br>Short. Clean. No noise.</p>
+    </div>
+    <div class="brief-grid">
+      <article class="latest-brief">
+        <div class="brief-meta"><span>BRIEF / 001</span><span>ISSUE NOTE</span></div>
+        <h3>Signal over noise.</h3>
+        <ul><li>Markets move on structure, not volume of opinion.</li><li>AI is a tool. Process decides its value.</li><li>Real-world assets need real rails.</li></ul>
+        <a class="brief-link" href="#/brief/001">Read brief <span>↗</span></a>
+      </article>
+      <div class="brief-subscribe">
+        <span class="brief-label">01 / SUBSCRIBE</span><h3>Get the brief.</h3>
+        <form class="minimal-form" id="brief-subscribe-form">
+          <label class="sr-only" for="brief-email">Email address</label>
+          <input id="brief-email" name="email" type="email" placeholder="Email address" autocomplete="email" required />
+          <button class="btn" type="submit">Subscribe <span>↗</span></button>
+          <p class="form-note">Operator brief only. No spam.</p><p class="brief-form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <div class="brief-sponsor" id="sponsor">
+      <div class="sponsor-intro">
+        <span class="brief-label">02 / SPONSOR A BRIEF</span>
+        <h3>Put your name<br>in the room.</h3>
+        <p>A sponsor funds a clearly labeled presenting placement beside a BriefOS issue. The note stays editorial. Your brand gets context with an operator-minded readership—without buying the conversation or a promise of performance.</p>
+        <div class="sponsor-value">
+          <span>WHAT IT OPENS</span>
+          <ul><li>Relevant brand visibility in the briefing</li><li>Association with markets, AI, and real-world asset conversations</li><li>One issue, or a consistent presence across four</li></ul>
+        </div>
+        <p class="sponsor-disclaimer">Placement is labeled. Audience reach and business outcomes are not guaranteed.</p>
+        <a class="brief-link" href="https://www.instagram.com/cryptoac3y/" target="_blank" rel="noreferrer noopener">Ask about a sponsor slot / DM SPONSOR <span>↗</span></a>
+      </div>
+      <div class="sponsor-products">
+        <article class="sponsor-product">
+          <img src="assets/briefos-single-issue.jpg" alt="BriefOS single issue sponsor product artwork" loading="lazy" />
+          <div class="sponsor-product-body">
+            <div class="brief-meta"><span>01 / SINGLE ISSUE</span><span>PILOT</span></div>
+            <h4>One issue.<br>One signal.</h4>
+            <p>A labeled presenting placement in one BriefOS issue. A focused way to test fit with the room.</p>
+            <span class="sponsor-price">$250–$750</span>
+            <a class="btn sponsor-checkout" href="https://buy.stripe.com/3cIaEZ4SJ3lF3KG2p2gUM07" target="_blank" rel="noreferrer noopener">Sponsor one issue <span>↗</span></a>
+          </div>
+        </article>
+        <article class="sponsor-product">
+          <img src="assets/briefos-four-issue.jpg" alt="BriefOS four issue sponsor product artwork" loading="lazy" />
+          <div class="sponsor-product-body">
+            <div class="brief-meta"><span>02 / MONTHLY · 4 ISSUES</span><span>PILOT</span></div>
+            <h4>Four issues.<br>One formation.</h4>
+            <p>A labeled presenting placement across four issues. Build continuity through a month of briefs.</p>
+            <span class="sponsor-price">$800–$2,000</span>
+            <a class="btn sponsor-checkout" href="https://buy.stripe.com/eVqeVfgBrcWf2GC6FigUM06" target="_blank" rel="noreferrer noopener">Sponsor four issues <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="sponsor-payment-note">Checkout and final pilot price are confirmed on Stripe.</p>
+    </div>
+    <p class="brief-framing">The brief is public. The desk is private. Kurogami is the rail underneath.</p>
+  </section>`;
+}
 function networkSection() { return `<section class="page network-section" id="network"><div class="kuro-section-label"><span>NETWORK / DISTRIBUTION</span><span>03 / CROSSOVER</span></div><h2 class="display home-section-title">Formation<br>over audience.</h2><div class="network-grid"><article class="network-card"><span>01 / OPERATOR INTRO</span><h3>Intro. Signal. Seat.</h3><p>Share an intro link. Attribution without rank theater.<br>Seat value holds with zero team.</p><button class="text-link" type="button" data-dm-trigger>Get intro link / DM DESK <span>↗</span></button></article><article class="network-card"><span>02 / FORGE NETWORK</span><h3>Distribution, recorded.</h3><p>Intros, briefings, events, creator surfaces.<br>Not a downline toy. A record of touch and conversion.</p><a class="text-link" href="https://forgenetwork-two.vercel.app/" target="_blank" rel="noreferrer noopener">Open Forge Network <span>↗</span></a></article><article class="network-card"><span>03 / CREATORS &amp; STREAMERS</span><h3>Keep your audience.</h3><p>Distribute into the operator path without turning audience into a gimmick.</p><a class="text-link" href="#/creator-path">Creator path / Apply <span>↗</span></a></article></div><div class="network-rail"><span>KUROGAMI / INFRASTRUCTURE</span><p>Infrastructure lives at Kurogami. Gami Boyz is the brotherhood lane.</p><a href="https://kurogami-core.vercel.app/" target="_blank" rel="noreferrer noopener">Open Kurogami ↗</a></div></section>`; }
 const profitScreenshots = ['trade-profit.jpg', 'trading.jpg', 'trading2.jpg', 'trading4.jpg', 'trading5.jpg', 'trading6.jpg', 'trading7.jpg', 'trading8.jpg', 'trading9.jpg', 'trading10.jpg', 'trading11.jpg', 'trading12.jpg', 'trading13.jpg'];
 function profitGallery() { return `<section class="page profit-gallery-section"><div class="eyebrow">DESK PROOF / EXECUTION LOG</div><h2 class="display home-section-title">Real Execution</h2><p class="profit-gallery-subtitle">Real execution. Not signal spam.</p><div class="profit-carousel"><button class="carousel-control proof-prev" type="button" aria-label="Previous proof images">←</button><div class="profit-gallery">${profitScreenshots.map((image, index) => `<button class="profit-shot" type="button" data-proof-src="assets/${image}" onclick="window.openProofModal(this)" aria-label="Open trading screenshot ${index + 1}"><img src="assets/${image}" alt="Trading screenshot ${index + 1}" loading="lazy" decoding="async" /></button>`).join('')}</div><button class="carousel-control proof-next" type="button" aria-label="Next proof images">→</button></div></section>`; }
