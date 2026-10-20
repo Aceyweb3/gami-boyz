@@ -95,7 +95,7 @@ function briefSection() {
             <div class="brief-meta"><span>01 / SINGLE ISSUE</span><span>PILOT</span></div>
             <h4>One issue.<br>One signal.</h4>
             <p>A labeled presenting placement in one BriefOS issue. A focused way to test fit with the room.</p>
-            <span class="sponsor-price">$250–$750</span>
+            <span class="sponsor-price">$250</span>
             <a class="btn sponsor-checkout" href="https://buy.stripe.com/3cIaEZ4SJ3lF3KG2p2gUM07" target="_blank" rel="noreferrer noopener">Sponsor one issue <span>↗</span></a>
           </div>
         </article>
@@ -105,12 +105,12 @@ function briefSection() {
             <div class="brief-meta"><span>02 / MONTHLY · 4 ISSUES</span><span>PILOT</span></div>
             <h4>Four issues.<br>One formation.</h4>
             <p>A labeled presenting placement across four issues. Build continuity through a month of briefs.</p>
-            <span class="sponsor-price">$800–$2,000</span>
+            <span class="sponsor-price">$800</span>
             <a class="btn sponsor-checkout" href="https://buy.stripe.com/eVqeVfgBrcWf2GC6FigUM06" target="_blank" rel="noreferrer noopener">Sponsor four issues <span>↗</span></a>
           </div>
         </article>
       </div>
-      <p class="sponsor-payment-note">Checkout and final pilot price are confirmed on Stripe.</p>
+      <p class="sponsor-payment-note">Stripe checkout collects purchaser details. No separate sponsor email form.</p>
     </div>
     <p class="brief-framing">The brief is public. The desk is private. Kurogami is the rail underneath.</p>
   </section>`;
