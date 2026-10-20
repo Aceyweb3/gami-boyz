@@ -66,15 +66,6 @@ function briefSection() {
         <ul><li>Markets move on structure, not volume of opinion.</li><li>AI is a tool. Process decides its value.</li><li>Real-world assets need real rails.</li></ul>
         <a class="brief-link" href="#/brief/001">Read brief <span>↗</span></a>
       </article>
-      <div class="brief-subscribe">
-        <span class="brief-label">01 / SUBSCRIBE</span><h3>Get the brief.</h3>
-        <form class="minimal-form" id="brief-subscribe-form">
-          <label class="sr-only" for="brief-email">Email address</label>
-          <input id="brief-email" name="email" type="email" placeholder="Email address" autocomplete="email" required />
-          <button class="btn" type="submit">Subscribe <span>↗</span></button>
-          <p class="form-note">Operator brief only. No spam.</p><p class="brief-form-status" aria-live="polite"></p>
-        </form>
-      </div>
     </div>
     <div class="brief-sponsor" id="sponsor">
       <div class="sponsor-intro">
@@ -260,16 +251,6 @@ function bindForms() {
     window.location.href = `mailto:hello@gamiboyz.com?subject=${subject}&body=${body}`;
     const status = document.querySelector('#creative-form-status');
     if (status) status.textContent = 'Opening your mail app...';
-  });
-
-  const subscribeForm = document.querySelector('#brief-subscribe-form');
-  if (subscribeForm) subscribeForm.addEventListener('submit', event => {
-    event.preventDefault();
-    const data = new FormData(subscribeForm);
-    const subject = encodeURIComponent('BriefOS subscription');
-    const body = encodeURIComponent(`Please add this address to the operator brief:\n${data.get('email')}`);
-    window.location.href = `mailto:hello@gamiboyz.com?subject=${subject}&body=${body}`;
-    subscribeForm.querySelector('.brief-form-status').textContent = 'Opening your mail app to request the brief.';
   });
 
   const sponsorForm = document.querySelector('#brief-sponsor-form');
