@@ -12,4 +12,4 @@ python3 -m http.server 8080
 
 Then visit `http://localhost:8080`.
 
-Routes are hash-based for static hosting: `/`, `/club`, `/access`, `/gallery`, `/token`, `/join`, and `/members`.
+Routes are hash-based for static hosting. The top navigation includes `/opportunity`, `/desks`, and `/events` home-section links, plus `/media`, `/manga`, and `/join`. Existing routes include `/club`, `/access`, `/gallery`, `/token`, `/onboarding`, `/terms`, and `/members`.
