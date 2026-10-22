@@ -1458,3 +1458,60 @@ body[data-route="home"] .brief-sponsor { grid-template-columns:1fr; }
 	.agentic-cta { padding:22px; margin-top:48px; }
 	.agentic-cta .btns { width:100%; }
 }
+
+/* KAGE podcast */
+body[data-route="home"] .kage-section { background:#0b0b0b; color:var(--cream); }
+.kage-section { border-top:1px solid rgba(199,165,103,.2); }
+.kage-hero { display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,.8fr); align-items:end; gap:clamp(35px,8vw,110px); margin-top:38px; }
+.kage-wordmark > span { display:block; margin-bottom:12px; color:var(--gold); font-size:28px; line-height:1; }
+.kage-wordmark h2 { margin:0; color:var(--cream); font:clamp(110px,20vw,230px)/.72 var(--display); letter-spacing:-.04em; }
+.kage-wordmark > p { margin:22px 0 0; color:var(--gold); font-size:clamp(16px,2vw,22px); letter-spacing:.02em; }
+.kage-label { color:var(--gold); font-size:9px; font-weight:700; letter-spacing:1.5px; }
+.kage-subtitle { margin:18px 0 22px; color:var(--cream); font:clamp(24px,3vw,38px)/1.05 var(--display); text-transform:uppercase; }
+.kage-intro > p:not(.kage-subtitle) { max-width:500px; margin:0 0 14px; color:#aaa396; font-size:14px; line-height:1.65; }
+.kage-intro .kage-disclaimer { margin-top:25px!important; color:#777166!important; font-size:10px!important; letter-spacing:1px; text-transform:uppercase; }
+.kage-principle { display:grid; grid-template-columns:220px 1fr; gap:28px; margin-top:52px; padding:20px 0; border-top:1px solid rgba(199,165,103,.28); border-bottom:1px solid rgba(199,165,103,.28); }
+.kage-principle > span { color:var(--gold); font-size:9px; font-weight:700; letter-spacing:1.4px; }
+.kage-principle p { max-width:760px; margin:0; color:#c0b9ac; font-size:14px; line-height:1.65; }
+.kage-format { margin-top:58px; }
+.kage-format-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-top:16px; }
+.kage-format-grid article { min-height:205px; display:flex; flex-direction:column; padding:22px; border:1px solid rgba(199,165,103,.26); background:#101010; }
+.kage-format-grid article > span,.kage-episode-meta { color:var(--gold); font-size:9px; font-weight:700; letter-spacing:1.3px; }
+.kage-format-grid h3 { margin:auto 0 10px; color:var(--cream); font:clamp(30px,4vw,44px)/.9 var(--display); text-transform:uppercase; }
+.kage-format-grid p { margin:0; color:#aaa396; font-size:12px; line-height:1.55; }
+.kage-episodes { margin-top:66px; }
+.kage-episodes-head { display:flex; justify-content:space-between; align-items:end; gap:20px; margin-bottom:18px; }
+.kage-episodes-head h3 { margin:14px 0 0; color:var(--cream); font:clamp(48px,7vw,82px)/.8 var(--display); text-transform:uppercase; }
+.kage-episodes-head > span { color:#777166; font-size:9px; font-weight:700; letter-spacing:1.1px; }
+.kage-episode-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.kage-episode-grid article { display:flex; min-height:250px; flex-direction:column; padding:22px; border:1px solid rgba(199,165,103,.24); background:#101010; }
+.kage-episode-meta { display:flex; justify-content:space-between; gap:12px; }
+.kage-episode-grid h4 { margin:42px 0 12px; color:var(--cream); font:clamp(27px,3vw,38px)/.92 var(--display); text-transform:uppercase; }
+.kage-episode-grid p { margin:0 0 20px; color:#aaa396; font-size:12px; line-height:1.55; }
+.kage-duration { margin-top:auto; padding-top:16px; border-top:1px solid rgba(199,165,103,.2); color:#777166; font-size:9px; font-weight:700; letter-spacing:1.2px; }
+.kage-hosts { display:grid; grid-template-columns:220px 1fr; gap:28px; margin-top:34px; padding:20px 0; border-top:1px solid rgba(199,165,103,.28); border-bottom:1px solid rgba(199,165,103,.28); }
+.kage-hosts > div:last-child { display:flex; flex-wrap:wrap; gap:14px 38px; }
+.kage-hosts span { color:#aaa396; font-size:12px; }
+.kage-hosts strong { color:var(--cream); }
+.kage-cta { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); align-items:center; gap:40px; margin-top:56px; padding:26px; border:1px solid rgba(199,165,103,.3); background:#11100d; }
+.kage-cta > div:first-child > p { max-width:420px; margin:16px 0 0; color:#c0b9ac; font-size:14px; line-height:1.6; }
+.kage-cta-links { display:flex; flex-wrap:wrap; align-items:center; gap:9px; }
+.kage-cta-links .btn { min-height:42px; padding:10px 13px; border-color:rgba(199,165,103,.45); background:#0b0b0b; color:var(--cream); font-size:9px; }
+.kage-cta-links .btn:hover { border-color:var(--gold); color:var(--gold); }
+.kage-cta-links .text-link { padding:10px 8px; color:var(--gold); font-size:10px; font-weight:700; letter-spacing:.8px; text-transform:uppercase; }
+.kage-footer-note { margin:24px 0 0; color:#777166; font-size:10px; line-height:1.6; letter-spacing:.08em; }
+body[data-route="home"] #kage { scroll-margin-top:115px; }
+@media (max-width:699px) {
+	.kage-hero { grid-template-columns:1fr; gap:38px; margin-top:28px; }
+	.kage-wordmark h2 { font-size:clamp(112px,35vw,180px); }
+	.kage-wordmark > p { margin-top:18px; }
+	.kage-principle,.kage-hosts { grid-template-columns:1fr; gap:12px; }
+	.kage-format-grid,.kage-episode-grid { grid-template-columns:1fr; gap:8px; }
+	.kage-format-grid article { min-height:165px; }
+	.kage-episode-grid article { min-height:210px; }
+	.kage-episode-grid h4 { margin-top:30px; }
+	.kage-episodes-head { align-items:start; flex-direction:column; gap:12px; }
+	.kage-cta { grid-template-columns:1fr; gap:24px; padding:20px; }
+	.kage-cta-links { align-items:stretch; }
+	.kage-cta-links .btn { flex:1 1 140px; }
+}
